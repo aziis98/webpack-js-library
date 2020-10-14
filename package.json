@@ -1,0 +1,30 @@
+{
+  "name": "webpack-js-library",
+  "jest": {
+    "verbose": true,
+    "roots": [
+      "test/"
+    ]
+  },
+  "version": "0.0.1",
+  "description": "Webpack setup for writing a JavaScript library and making it availabe as script or npm package",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "serve": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.11.0",
+    "jest": "^26.5.3",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
